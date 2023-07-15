@@ -1,0 +1,15 @@
+package com.masai.lambda;
+
+import java.util.*;
+
+public class Problem_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Employee> list = new ArrayList<>();
+//		public Employee(int empId, String name, String address, int salary)
+		Employee ep1 = new Employee(1,"Aman","Varanasi",4000);
+		
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.masai.model;
+
+public class Session {
+	private int id ;//(primary key)
+	private String session_duration;
+	private int  date;
+	private int  time;
+	 private int trainer_id ;//(foreign key)
+	 private int  member_id;// (foreign key)
+}

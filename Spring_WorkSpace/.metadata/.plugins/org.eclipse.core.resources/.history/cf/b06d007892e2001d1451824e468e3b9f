@@ -1,0 +1,9 @@
+package com.masai.model;
+
+public class WorkoutPlan {
+	private int id ;//(primary key)
+	private String workout_name;
+	private String exercise_type;
+	private String intensity;
+	private int frequency;
+}

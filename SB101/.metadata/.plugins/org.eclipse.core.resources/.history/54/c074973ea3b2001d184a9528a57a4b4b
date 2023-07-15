@@ -1,0 +1,13 @@
+package com.masai.week3;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+
+public class Try {
+	public static void main(String[] args) {
+		LocalDate ld = LocalDate.of(2015, 8, 05);
+		DayOfWeek dw = ld.getDayOfWeek();
+		
+		System.out.println(dw);
+	}
+}

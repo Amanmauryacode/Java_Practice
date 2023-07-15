@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!-- Problem 1 Spring Bean Object -->
+
+	<bean id="dt" class="java.util.Date" />
+
+	<bean id="T" class="com.masai.problem1.Tourist">
+
+		<constructor-arg name="name" value="Aman" />
+		<constructor-arg name="age" value="18" />
+		<constructor-arg name="aadhar_id"
+			value="1845 2759 5458" />
+	</bean>
+
+	<bean id="HP" class="com.masai.problem1.HolidayPackage">
+		<property name="package_name" value="ABC" />
+		<property name="tourist" ref="T" />
+		<property name="package_expiry" ref="dt" />
+		<property name="package_price" value="25000" />
+	</bean>
+
+
+	<!-- Problem 2 Spring Bean Object -->
+
+
+	<bean id="Dept1" class="com.masai.problem2.Department">
+
+		<constructor-arg name="deptId" value="1" />
+		<constructor-arg name="deptName" value="Sales" />
+		<constructor-arg name="location" value="Pune" />
+	</bean>
+	
+	<bean id="Dept2" class="com.masai.problem2.Department">
+
+		<constructor-arg name="deptId" value="2" />
+		<constructor-arg name="deptName" value="Marketing" />
+		<constructor-arg name="location" value="Delhi" />
+	</bean>
+	
+	<bean id="Dept3" class="com.masai.problem2.Department">
+
+		<constructor-arg name="deptId" value="3" />
+		<constructor-arg name="deptName" value="Marketing" />
+		<constructor-arg name="location" value="Gao" />
+	</bean>
+	
+	<bean id="Emp1" class="com.masai.problem2.Employee">
+		<constructor-arg name="empId" value="1" />
+		<constructor-arg name="empName" value="Rahul Chamoli" />
+		<constructor-arg name="address" value="DD" />
+		<constructor-arg name="salary" value="1000000" />
+	</bean>
+	
+	<bean id="Emp2" class="com.masai.problem2.Employee">
+		<constructor-arg name="empId" value="2" />
+		<constructor-arg name="empName"
+			value="Rounak Dhattarawal" />
+		<constructor-arg name="address" value="Jaipur" />
+		<constructor-arg name="salary" value="2000000" />
+	</bean>
+	
+	<bean id="Emp3" class="com.masai.problem2.Employee">
+		<constructor-arg name="empId" value="3" />
+		<constructor-arg name="empName" value="Aman" />
+		<constructor-arg name="address" value="Varanasi" />
+		<constructor-arg name="salary" value="1200000" />
+	</bean>
+
+	<bean id="Demo" class="com.masai.problem2.Demo"
+		scope="prototype" init-method="myInit" destroy-method="cleanUp" lazy-init="true">
+		<property name="theMap">
+			<map>
+				<entry key-ref="Dept1" value-ref="Emp1" />
+				<entry key-ref="Dept2" value-ref="Emp2" />
+				<entry key-ref="Dept3" value-ref="Emp3" />
+			</map>
+		</property>
+
+	</bean>
+
+</beans>

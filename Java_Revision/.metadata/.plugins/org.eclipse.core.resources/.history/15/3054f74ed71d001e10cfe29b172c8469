@@ -1,0 +1,39 @@
+package com.masai.service;
+
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+import com.masai.entity.AuthenticationRequest;
+import com.masai.entity.AuthenticationResponse;
+import com.masai.entity.RegisterRequest;
+import com.masai.entity.Role;
+import com.masai.entity.User;
+import com.masai.repository.UserRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@Service
+@RequiredArgsConstructor
+public class AuthenticationService {
+
+	private final UserRepository repository;
+	
+	private final PasswordEncoder passwordEncoder;
+	public AuthenticationResponse register(RegisterRequest request) {
+		
+		User user = new User();
+		
+		user.setEmail(request.getEmail());
+		user.setFirstName(request.getFirstName());
+		user.setLastName(request.getLastName());
+		user.setPassword(passwordEncoder.encode(request.getPassword()));
+		user.setRole(Role.USER);
+		return null;
+	}
+
+	public AuthenticationResponse authenticate(AuthenticationRequest request) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,39 @@
+package com.masai.ass11;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+import java.util.Scanner;
+
+public class Validate {
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    //Create an array of objects
+	    TaxPayer tpArr[] = new TaxPayer[5];
+	    int totalTaxPayers = 0;
+
+	    while(true) {
+	      System.out.print("Please enter name, PAN and adhaar Number ");
+	      String name = sc.next();
+	      String panNumber = sc.next();
+	      long adhaarNumber = sc.nextLong();
+	      if(checkPAN(panNumber) && checkAdhaar(adhaarNumber)) {
+	        //you are here means PAN and adhaar are in correct format
+	        if(addTaxPayer(tpArr, new TaxPayer(panNumber, adhaarNumber, name))) {
+	          //you are here means tax payer has added to the array
+	          System.out.println("Yahoo! Tax payer added\n");
+	          if(++totalTaxPayers == tpArr.length)
+	            //the array is full so better to break the loop
+	            break;
+	        }else {
+	          System.out.println("Tax Payer with this PAN & adhaar already exists\n");
+	        }
+	      }else {
+	        System.out.println("Enter correct PAN & adhaar number\n");
+	      }
+	    }
+
+	    System.out.println("Details of tax payers are as follow-");
+	    for(TaxPayer tp: tpArr)
+	      System.out.println(tp);
+	    sc.close();
+	  }
+}

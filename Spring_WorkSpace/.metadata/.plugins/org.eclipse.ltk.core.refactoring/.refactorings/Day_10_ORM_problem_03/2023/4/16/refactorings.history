@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.masai.Dao.StoreDao&apos; to &apos;ShoppingDao&apos;&#x0D;&#x0A;- Original project: &apos;Day_10_ORM_problem_03&apos;&#x0D;&#x0A;- Original element: &apos;com.masai.Dao.StoreDao&apos;&#x0D;&#x0A;- Renamed element: &apos;com.masai.Dao.ShoppingDao&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;StoreDao&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.masai.Dao{StoreDao.java[StoreDao" matchStrategy="1" name="ShoppingDao" qualified="false" references="true" similarDeclarations="false" stamp="1682026321511" textual="false" version="1.0"/>
+</session>

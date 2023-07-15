@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.masai.DTO.MovieGenere&apos; to &apos;MovieGenre&apos;&#x0D;&#x0A;- Original project: &apos;Rounak_Project&apos;&#x0D;&#x0A;- Original element: &apos;com.masai.DTO.MovieGenere&apos;&#x0D;&#x0A;- Renamed element: &apos;com.masai.DTO.MovieGenre&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MovieGenere&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.masai.DTO{MovieGenere.java[MovieGenere" matchStrategy="1" name="MovieGenre" qualified="false" references="true" similarDeclarations="false" stamp="1685946791780" textual="false" version="1.0"/>
+</session>

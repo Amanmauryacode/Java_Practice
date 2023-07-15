@@ -1,0 +1,20 @@
+package com.masai.problem4;
+
+public class Common {
+	
+	static int num = 0;
+	boolean flag = true;
+	
+	public static void produce() {
+		num = (int) (Math.random()*5+0);
+		
+		System.out.println("Producer Produced: " + num);
+	}
+	
+	public static void main(String[] args) {
+		produce();
+		
+	}
+	
+	
+}

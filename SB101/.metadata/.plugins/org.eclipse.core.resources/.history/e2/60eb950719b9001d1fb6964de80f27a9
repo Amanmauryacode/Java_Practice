@@ -1,0 +1,78 @@
+package com.masai.day2;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.masai.lambda.prob_4.Student;
+
+class Student{
+	private int roll;
+	private String name;
+	private String email;
+	private int marks;
+	private String country;
+	
+	public Student(int roll, String name, String email, int marks, String country) {
+		super();
+		this.roll = roll;
+		this.name = name;
+		this.email = email;
+		this.marks = marks;
+		this.country = country;
+	}
+	public int getRoll() {
+		return roll;
+	}
+	public void setRoll(int roll) {
+		this.roll = roll;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public int getMarks() {
+		return marks;
+	}
+	public void setMarks(int marks) {
+		this.marks = marks;
+	}
+	public String getCountry() {
+		return country;
+	}
+	public void setCountry(String country) {
+		this.country = country;
+	}
+	@Override
+	public String toString() {
+		return "roll=" + roll + ", name=" + name + ", email=" + email + ", marks=" + marks + ", country="
+				+ country + "\n";
+	}
+	
+}
+
+
+interface Demo1{
+	public void printDetail(Student student);
+}
+public class Problem2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Student> list = new ArrayList<>();
+		list.add(new Student(1,"Aman","amanmaurya@gmail.com",450,"India"));
+		list.add(new Student(2,"Anshu","anshu@gmail.com",350,"Pakistan"));
+		list.add(new Student(3,"Shubham","shubham@gmail.com",250,"Amrica"));
+		list.add(new Student(4,"Pankaj","pankaj@gmail.com",550,"Africa"));
+		list.add(new Student(5,"Nagesh","nagesh@gmail.com",650,"Austrila"));
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package com.masai.cw;
+
+public interface Stack {
+
+}

@@ -1,0 +1,17 @@
+package com.masai.cw;
+
+class MyStack implements Stack{
+	  private int stack[];
+	  private int top;
+	  final static int MAX_SIZE = 5;
+	  MyStack(){
+	    stack = new int[MAX_SIZE];
+	    top = -1;
+	  }
+	  
+	  public String toString(){
+	    return Stack.displayStackElements(stack);
+	  }
+	}
+
+	

@@ -1,0 +1,23 @@
+package com.masai.cw;
+
+public class MyStack implements Stack {
+
+	@Override
+	public void push(int element) throws OverflowException {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public int pop() throws UnderflowException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int peek() throws UnderflowException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="a1" class="com.masai.model.Artist">
+
+		<property name="id" value="1"></property>
+		<property name="name" value="Aman"></property>
+		<property name="age" value="18"></property>
+		<property name="noOfArtworksCreated" value="5"></property>
+		<property name="email" value="aman@gmail.com"></property>
+		<property name="mobile" value="6306804122"></property>
+
+	</bean>
+
+	<bean id="a2" class="com.masai.model.Artist">
+
+		<property name="id" value="2"></property>
+		<property name="name" value="Anuj"></property>
+		<property name="age" value="28"></property>
+		<property name="noOfArtworksCreated" value="6"></property>
+		<property name="email" value="aman@gmail.com"></property>
+		<property name="mobile" value="6306804122"></property>
+
+	</bean>
+
+	<bean id="a3" class="com.masai.model.Artist">
+
+		<property name="id" value="3"></property>
+		<property name="name" value="pankaj"></property>
+		<property name="age" value="20"></property>
+		<property name="noOfArtworksCreated" value="1"></property>
+		<property name="email" value="aman@gmail.com"></property>
+		<property name="mobile" value="6306804122"></property>
+
+	</bean>
+
+
+	<bean id="a4" class="com.masai.model.Artist">
+
+		<property name="id" value="4"></property>
+		<property name="name" value="Shubham"></property>
+		<property name="age" value="20"></property>
+		<property name="noOfArtworksCreated" value="4"></property>
+		<property name="email" value="aman@gmail.com"></property>
+		<property name="mobile" value="6306804122"></property>
+
+	</bean>
+
+	<bean id="a5" class="com.masai.model.Artist">
+
+		<property name="id" value="5"></property>
+		<property name="name" value="Rounak"></property>
+		<property name="age" value="22"></property>
+		<property name="noOfArtworksCreated" value="4"></property>
+		<property name="email" value="aman@gmail.com"></property>
+		<property name="mobile" value="6306804122"></property>
+
+	</bean>
+
+	<bean id="a6" class="com.masai.model.Artist">
+
+		<property name="id" value="6"></property>
+		<property name="name" value="Rahul"></property>
+		<property name="age" value="22"></property>
+		<property name="noOfArtworksCreated" value="5"></property>
+		<property name="email" value="aman@gmail.com"></property>
+		<property name="mobile" value="6306804122"></property>
+
+	</bean>
+
+		<!--- ArtWork Objects -->
+
+	<bean id="aw1" class="com.masai.model.Artwork">
+
+		<property name="id" value="1"></property>
+		<property name="name" value="Rahul"></property>
+		<property name="creationTime" value="2"></property>
+
+	</bean>
+	<bean id="aw2" class="com.masai.model.Artwork">
+
+		<property name="id" value="2"></property>
+		<property name="name" value="Rounak"></property>
+		<property name="creationTime" value="3"></property>
+
+	</bean>
+	<bean id="aw3" class="com.masai.model.Artwork">
+
+		<property name="id" value="3"></property>
+		<property name="name" value="Aman"></property>
+		<property name="creationTime" value="3"></property>
+
+	</bean>
+	<bean id="aw4" class="com.masai.model.Artwork">
+
+		<property name="id" value="4"></property>
+		<property name="name" value="Anuj"></property>
+		<property name="creationTime" value="5"></property>
+
+	</bean>
+
+	<bean id="ArtistService" class="com.masai.service.ArtistService">
+
+		<property name="artworkMap">
+			<map>
+
+				<entry key-ref="a1" value-ref = "aw1"></entry>
+				<entry key-ref="a2" value-ref = "aw2"></entry>
+				<entry key-ref="a3" value-ref = "aw3"></entry>
+				<entry key-ref="a4" value-ref = "aw4"></entry>
+			</map>
+
+		</property>
+
+
+		<property name="artistList">
+		
+		<list>
+		<ref bean = "a1"/>
+		<ref bean = "a2"/>
+		<ref bean = "a3"/>
+		<ref bean = "a4"/>
+		<ref bean = "a5"/>
+		<ref bean = "a6"/>
+		
+		</list>
+		
+		</property>
+	
+	</bean>
+
+
+
+
+
+</beans>

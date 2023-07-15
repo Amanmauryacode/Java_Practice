@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 4 elements from project &apos;Core_Java_Ass02_Que_2&apos;&#x0D;&#x0A;- Original project: &apos;Core_Java_Ass02_Que_2&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Core_Java_Ass02_Que_2/src/com.masai.package1&#x0D;&#x0A;     com.masai.package1.EMIByFlatRate.java&#x0D;&#x0A;     com.masai.package1.EMIByReducingBalanace.java&#x0D;&#x0A;     com.masai.package1.EquatedMonthlyInstallment.java" description="Delete elements" element1="/src&lt;com.masai.package1" element2="/src&lt;com.masai" element3="/src&lt;com" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1685363889128" subPackages="false" version="1.0"/>
+</session>

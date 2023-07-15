@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.masai.exception&apos; to &apos;Mock-12/src/main/java/com.masai&apos;&#x0D;&#x0A;- Original project: &apos;MasaiBookstore&apos;&#x0D;&#x0A;- Destination element: &apos;Mock-12/src/main/java/com.masai&apos;&#x0D;&#x0A;- Original element: &apos;MasaiBookstore/src/main/java/com.masai.exception&apos;" description="Copy package" destination="=Mock-12/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.masai" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.masai.exception" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1686644583939" version="1.0"/>
+</session>
